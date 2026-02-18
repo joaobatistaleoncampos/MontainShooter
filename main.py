@@ -12,4 +12,4 @@ while True:
               print('Quitting...')
               print('Quitting...')
               pygame.quit() # Close window
-             quit() # end pygame
+              quit() # end pygame
