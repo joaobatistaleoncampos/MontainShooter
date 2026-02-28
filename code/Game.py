@@ -8,23 +8,11 @@ from code.const import WIN_WIDTH, WIN_HEIGHT
 
 class GAME:
     def __init__(self):
-
         pygame.init()
         self.window = pygame.display.set_mode(size=(WIN_WIDTH, WIN_HEIGHT))
-    def run(self ):
-        pygame.mixer_music.load('./asset/musica_naoMP3')
-        pygame.mixer_music.play(-1)
 
+    def run(self):
         while True:
-             menu = Menu(self.window)
-             menu.run()
-             pass
-
-
-             # Check for all events
-             for event in pygame.event.get():
-                 if event.type == pygame.QUIT:
-                      print('Quitting...')
-
-                      pygame.quit() # Close window
-                      quit() # end pygame
+            menu = Menu(self.window)
+            menu.run()
+            pass
